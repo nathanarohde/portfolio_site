@@ -1,0 +1,96 @@
+{
+  "Frontend Skills & Tools": [
+    {
+      "Javascript": {
+        "start_year": 2014,
+        "subskills": [
+          ["React", 1],
+          ["Angular 1", 1],
+          ["Angular 2", 1],
+          ["Vue", 1],
+          ["D3", 1],
+          ["Node", 2],
+          ["NPM", 2],
+          ["Webpack", 1],
+          ["JQuery", 4],
+          ["Ajax", 4]
+        ]
+      }
+    },
+    {
+      "CSS": {
+        "start_year": 2012,
+        "subskills": [
+          ["Less", 3],
+          ["Sass", 3]
+        ]
+      }
+    },
+    {
+      "HTML": {
+        "start_year": 2012,
+        "subkills": false
+      }
+    },
+    {
+      "Bootstrap (2, 3, 4)": {
+        "start_year": 2014,
+        "subskills": false
+      }
+    }
+  ],
+  "Developer Tools": [
+    {
+      "Source Control": {
+        "start_year": 2014,
+        "subskills": [
+          ["Git", 2],
+          ["Subversion", 3],
+          ["Jira", 3]
+        ]
+      }
+    },
+    {
+      "Chrome Developer Tools": {
+        "start_year": 2016,
+        "subskills": false
+      }
+    }
+  ],
+  "Art & Design": [
+    {
+      "Graphic Design": {
+        "start_year": 2004,
+        "subskills": false
+      },
+      "Illustration": {
+        "start_year": 2004,
+        "subskills": false
+      },
+      "Wireframes": {
+        "start_year": 2004,
+        "subskills": false
+      },
+      "Photo Editing": {
+        "start_year": 1999,
+        "subskills": false
+      }
+    }
+  ],
+  "Design Tools": [
+    {
+      "Photoshop": {
+        "start_year": 1999,
+        "subskills": false
+      },
+      "Illustrator": {
+        "start_year": 1999,
+        "subkills": false
+      },
+      "InDesign / PageMaker": {
+        "start_year": 1999,
+        "subskills": false
+      }
+    }
+  ]
+}
