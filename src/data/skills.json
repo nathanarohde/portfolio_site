@@ -2,7 +2,7 @@
   "Frontend Skills & Tools": [
     {
       "Javascript": {
-        "start_year": 2014,
+        "years": 5,
         "subskills": [
           ["React", 1],
           ["Angular 1", 1],
@@ -19,7 +19,7 @@
     },
     {
       "CSS": {
-        "start_year": 2012,
+        "years": 7,
         "subskills": [
           ["Less", 3],
           ["Sass", 3]
@@ -28,13 +28,13 @@
     },
     {
       "HTML": {
-        "start_year": 2012,
-        "subkills": false
+        "years": 7,
+        "subskills": false
       }
     },
     {
       "Bootstrap (2, 3, 4)": {
-        "start_year": 2014,
+        "years": 2014,
         "subskills": false
       }
     }
@@ -42,7 +42,7 @@
   "Developer Tools": [
     {
       "Source Control": {
-        "start_year": 2014,
+        "years": 5,
         "subskills": [
           ["Git", 2],
           ["Subversion", 3],
@@ -52,7 +52,7 @@
     },
     {
       "Chrome Developer Tools": {
-        "start_year": 2016,
+        "years": 2,
         "subskills": false
       }
     }
@@ -60,19 +60,19 @@
   "Art & Design": [
     {
       "Graphic Design": {
-        "start_year": 2004,
+        "years": 15,
         "subskills": false
       },
       "Illustration": {
-        "start_year": 2004,
+        "years": 15,
         "subskills": false
       },
       "Wireframes": {
-        "start_year": 2004,
+        "years": 15,
         "subskills": false
       },
       "Photo Editing": {
-        "start_year": 1999,
+        "years": 20,
         "subskills": false
       }
     }
@@ -80,15 +80,15 @@
   "Design Tools": [
     {
       "Photoshop": {
-        "start_year": 1999,
+        "years": 20,
         "subskills": false
       },
       "Illustrator": {
-        "start_year": 1999,
-        "subkills": false
+        "years": 20,
+        "subskills": false
       },
       "InDesign / PageMaker": {
-        "start_year": 1999,
+        "years": 20,
         "subskills": false
       }
     }
