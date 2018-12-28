@@ -62,15 +62,21 @@
       "Graphic Design": {
         "years": 15,
         "subskills": false
-      },
+      }
+    },
+    {
       "Illustration": {
         "years": 15,
         "subskills": false
-      },
+      }
+    },
+    {
       "Wireframes": {
         "years": 15,
         "subskills": false
-      },
+      }
+    },
+    {
       "Photo Editing": {
         "years": 20,
         "subskills": false
@@ -82,11 +88,15 @@
       "Photoshop": {
         "years": 20,
         "subskills": false
-      },
+      }
+    },
+    {
       "Illustrator": {
         "years": 20,
         "subskills": false
-      },
+      }
+    },
+    {
       "InDesign / PageMaker": {
         "years": 20,
         "subskills": false
