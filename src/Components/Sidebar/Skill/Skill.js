@@ -1,12 +1,22 @@
 import React from 'react'
+import Subskill from '../Subskill/Subskill'
 
 const skill = (props) => {
-  console.log(Object.keys(props.skill));
-  // { props.skill }
+  let subskills = null;
+
+  if ( props.skill[Object.keys(props.skill)[0]].subskills !== false ){
+    subskills = props.skill[Object.keys(props.skill)[0]].subskills.map( subskill => {
+      return <Subskill key={subskill[0]} subskill={subskill}></Subskill>
+    })
+  }
+
   return (
-    <p>{Object.keys(props.skill)[0]}
-      <span> X years</span>
-    </p>
+    <div>
+      <p>{ Object.keys(props.skill)[0] }
+        <span> { props.skill[Object.keys(props.skill)[0]].years } years</span>
+      </p>
+      { subskills }
+    </div>
   )
 }
 
