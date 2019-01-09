@@ -1,7 +1,8 @@
 {
-  "description": "",
+  "description": "Website which asynchronously retrieves images from github project source.  Redux is used to manage the displayed cartoon and route present in the URL.  URLs beside home do not currently work properly because they are not supported by github.io.",
   "id": 6,
+  "link": "https://nathanarohde.github.io/vfd_home_site/",
   "skills": ["HTML", "CSS", "Javascript", "React", "Redux", "Illustration"],
   "thumbnail": "",
-  "title": "Personal Web Comic Site"
+  "title": "Personal Comic Website"
 }

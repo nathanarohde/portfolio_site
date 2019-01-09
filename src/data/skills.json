@@ -5,6 +5,7 @@
         "years": 5,
         "subskills": [
           ["React", 1],
+          ["Redux", 1],
           ["Angular 1", 1],
           ["Angular 2", 1],
           ["Vue", 1],
