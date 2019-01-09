@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import all_projects from '../../data/projects/projects.json';
+import Project from '../../Components/Project/Project';
 
 class Main extends Component {
   state = {
@@ -21,12 +22,15 @@ class Main extends Component {
 
   addProject = (project) => {
     let joined = this.state.projectList.concat(project);
-    // console.log(joined);
     this.setState({projectList:joined});
   }
 
   render () {
-    const projects ="";
+    let projects = (this.state.projectList).map(project =>{
+      return <Project key={project.id} project={project}></Project>
+    });
+
+    console.log(projects);
 
     return (
       <main>
