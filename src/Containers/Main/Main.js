@@ -4,23 +4,25 @@ import all_projects from '../../data/projects/projects.json';
 
 class Main extends Component {
   state = {
-    projectList: {}
+    projectList: []
   }
 
   componentDidMount() {
     for (let i=1; i <= all_projects.total; i++ ){
-      console.log('https://raw.githubusercontent.com/nathanarohde/portfolio_site/src/data/projects/project' + i.toString() + '.json');
-      // axios.get('https://raw.githubusercontent.com/nathanarohde/portfolio_site/src/data/projects/project' + i.toString() + '.json')
-      // .then( reponse => {
-      //
-      // })
-      // .then( response => {
-      //   // this.setDisplayedCartoons( response.data.lastCartoon );
-      //   // this.props.onSetCurrentDisplayedCartoon(
-      //   //   parseInt(response.data.lastCartoon)
-      //   // )
-      // })
+      axios.get('https://raw.githubusercontent.com/nathanarohde/portfolio_site/master/src/data/projects/project' + i.toString() + '.json')
+      .then( response => {
+        this.addProject(response.data);
+      })
+      .catch( error => {
+        console.log('Error');
+      })
     }
+  }
+
+  addProject = (project) => {
+    let joined = this.state.projectList.concat(project);
+    // console.log(joined);
+    this.setState({projectList:joined});
   }
 
   render () {
