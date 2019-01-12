@@ -10,7 +10,7 @@ const project = (props) => {
       </div>
       <div className="row">
         <div className="col-4"></div>
-        <div className="col-8">
+        <div className="col-8 text-left">
           <p>{ props.project.description }</p>
           <p>{ props.project.skills }</p>
           <p>{ props.project.link }</p>

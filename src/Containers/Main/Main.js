@@ -5,14 +5,14 @@ import Project from '../../Components/Project/Project';
 
 class Main extends Component {
   state = {
-    projectList: []
+    projectList: new Array(all_projects.total)
   }
 
   componentDidMount() {
     for (let i=1; i <= all_projects.total; i++ ){
       axios.get('https://raw.githubusercontent.com/nathanarohde/portfolio_site/master/src/data/projects/project' + i.toString() + '.json')
       .then( response => {
-        this.addProject(response.data);
+        this.addProject(response.data, i);
       })
       .catch( error => {
         console.log('Error');
@@ -20,8 +20,9 @@ class Main extends Component {
     }
   }
 
-  addProject = (project) => {
-    let joined = this.state.projectList.concat(project);
+  addProject = (project, i) => {
+    let joined = this.state.projectList
+    joined[i - 1] = project;
     this.setState({projectList:joined});
   }
 
