@@ -2,7 +2,7 @@
   "description": "",
   "id": 5,
   "link": "",
-  "skills": [],
-  "thumbnail": "",
+  "skills": ["Illustrator", "SVG"],
+  "thumbnail": "clown_logo.png",
   "title": "Vegetables for Dessert logo redesign"
 }

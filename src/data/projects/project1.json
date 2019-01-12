@@ -1,8 +1,8 @@
 {
   "description": "Created HTML and CSS from WEM templates.",
   "id": 1,
-  "link": "",
+  "link": "https://www.ashland.com/",
   "skills": ["HTML", "CSS"],
-  "thumbnail": "",
+  "thumbnail": "ashland.png",
   "title": "Ashland.com Redesign"
 }

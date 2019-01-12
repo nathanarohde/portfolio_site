@@ -1,8 +1,8 @@
 {
   "description": "Edited HTML, CSS, Javascript and Jquery in legacy environment with high technical debt.",
   "id": 2,
-  "link": "",
+  "link": "https://www.carolina.com/",
   "skills": ["HTML", "CSS", "Javascript", "JQuery"],
-  "thumbnail": "",
+  "thumbnail": "carolina_bio.png",
   "title": "ECS Tuning Redesign"
 }
