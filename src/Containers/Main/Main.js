@@ -5,7 +5,8 @@ import Project from '../../Components/Project/Project';
 
 class Main extends Component {
   state = {
-    projectList: new Array(all_projects.total)
+    projectList: new Array(all_projects.total),
+    skillsFilter: {}
   }
 
   componentDidMount() {
@@ -13,6 +14,7 @@ class Main extends Component {
       axios.get('https://raw.githubusercontent.com/nathanarohde/portfolio_site/master/src/data/projects/project' + i.toString() + '.json')
       .then( response => {
         this.addProject(response.data, i);
+        this.addSkills(response.data, i);
       })
       .catch( error => {
         console.log('Error');
@@ -20,10 +22,26 @@ class Main extends Component {
     }
   }
 
-  addProject = (project, i) => {
+  addProject = (project, index) => {
     let joined = this.state.projectList
-    joined[i - 1] = project;
+    joined[index - 1] = project;
     this.setState({projectList:joined});
+  }
+
+  addSkills = (project, index) => {
+    // re-renders everytime state is updated
+    // could make skillsFiter a let variable
+    for (let i = 0; i < project.skills.length; i++){
+      if (this.state.skillsFilter[project.skills[i]]) {
+        let joined = this.state.skillsFilter;
+        joined[project.skills[i]].push(index);
+        this.setState({skillsFilter:joined});
+      } else {
+        let joined = this.state.skillsFilter;
+        joined[project.skills[i]] = [index]
+        this.setState({skillsFilter:joined});
+      }
+    }
   }
 
   render () {
@@ -31,7 +49,7 @@ class Main extends Component {
       return <Project key={project.id} project={project}></Project>
     });
 
-    console.log(projects);
+    // console.log(this.state.skillsFilter);
 
     return (
       <main>
